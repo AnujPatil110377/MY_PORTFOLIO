@@ -5,6 +5,8 @@ import { redirect } from "next/navigation";
 import { Icons } from "@/components/common/icons";
 import ProjectDescription from "@/components/projects/project-description";
 import BLEArchitectureDiagram from "@/components/projects/ble-architecture-diagram";
+import VideoEmbed from "@/components/projects/video-embed";
+import GifEmbed from "@/components/projects/gif-embed";
 import { buttonVariants } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
@@ -132,6 +134,35 @@ export default function Project({ params }: ProjectPageProps) {
                 {page.customComponent === "BLEArchitectureDiagram" && (
                   <div className="my-4">
                     <BLEArchitectureDiagram />
+                  </div>
+                )}
+                {page.customComponent === "VideoEmbed" && project.websiteLink && (
+                  <div className="my-4">
+                    <VideoEmbed 
+                      googleDriveUrl={project.websiteLink} 
+                      title={page.title}
+                      className="max-w-4xl mx-auto"
+                    />
+                  </div>
+                )}
+                {page.customComponent === "GifEmbed" && (
+                  <div className="my-4">
+                    {project.id === "linkedin-scraper" && (
+                      <GifEmbed 
+                        src="https://github.com/AnujPatil110377/linkedIn_Scraper/blob/main/jobs.gif?raw=true"
+                        alt="LinkedIn Scraper Job Processing Demo"
+                        width={800}
+                        height={450}
+                      />
+                    )}
+                    {project.id === "sketch-generation" && (
+                      <GifEmbed 
+                        src="https://github.com/AnujPatil110377/quick_draw/blob/main/rnn_cat.gif?raw=true"
+                        alt="AI Sketch Generation RNN Cat Demo"
+                        width={800}
+                        height={450}
+                      />
+                    )}
                   </div>
                 )}
                 {/* Render regular images */}

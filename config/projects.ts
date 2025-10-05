@@ -63,6 +63,7 @@ export const Projects: ProjectInterface[] = [
     category: ["AI/ML", "Robotics"],
     shortDescription: "A custom Gymnasium environment for deep reinforcement learning (DRL) with TurtleBot4 in ROS 2 & Gazebo, featuring robust navigation and advanced SLAM capabilities.",
     githubLink: "https://github.com/AnujPatil110377/Turtlebot4-RL",
+    websiteLink: "https://drive.google.com/file/d/1nxP_nftTVpdNu74930hxVFkkDXxcX2Zu/view",
     techStack: ["Python", "Reinforcement Learning", "ROS2", "Gazebo", "SLAM", "Machine Learning"],
     startDate: new Date("2024-01-01"),
     endDate: new Date("2024-06-30"),
@@ -83,7 +84,14 @@ export const Projects: ProjectInterface[] = [
         "Headless and visual simulation modes with optimized performance"
       ]
     },
-    pagesInfoArr: []
+    pagesInfoArr: [
+      {
+        title: "TurtleBot4-RL Navigation Demo",
+        imgArr: [],
+        description: "Live demonstration of TurtleBot4 autonomous navigation using reinforcement learning in Gazebo simulation environment.",
+        customComponent: "VideoEmbed"
+      }
+    ]
   },
   {
     id: "px4-path-planner",
@@ -92,6 +100,7 @@ export const Projects: ProjectInterface[] = [
     category: ["Robotics", "AI/ML"],
     shortDescription: "Integration of ego-planner-swarm with PX4 for planning real-time collision-free and obstacle-free trajectories in bounded environment.",
     githubLink: "https://github.com/AnujPatil110377/Path_planning_PX4",
+    websiteLink: "https://drive.google.com/file/d/1mS4SwN_tnUayqp6AD7laSQx_sVaSmY35/view",
     techStack: ["C++", "PX4", "ROS2", "Computer Vision", "Embedded Systems"],
     startDate: new Date("2024-07-01"),
     endDate: new Date("2024-12-31"),
@@ -111,7 +120,14 @@ export const Projects: ProjectInterface[] = [
         "Dynamic obstacle detection and trajectory re-planning capabilities"
       ]
     },
-    pagesInfoArr: []
+    pagesInfoArr: [
+      {
+        title: "PX4 Fast Planner Demo",
+        imgArr: [],
+        description: "Real-time demonstration of PX4 ego-planner-swarm integration for autonomous drone navigation and obstacle avoidance.",
+        customComponent: "VideoEmbed"
+      }
+    ]
   },
   {
     id: "linkedin-scraper",
@@ -138,7 +154,14 @@ export const Projects: ProjectInterface[] = [
         "Compliance with rate limiting and ethical scraping practices"
       ]
     },
-    pagesInfoArr: []
+    pagesInfoArr: [
+      {
+        title: "LinkedIn Scraper Demo",
+        imgArr: [],
+        description: "Demonstration of automated LinkedIn profile scraping and job data extraction with real-time processing visualization.",
+        customComponent: "GifEmbed"
+      }
+    ]
   },
   {
     id: "sketch-generation",
@@ -165,7 +188,14 @@ export const Projects: ProjectInterface[] = [
         "Batch processing capabilities for multiple image conversion"
       ]
     },
-    pagesInfoArr: []
+    pagesInfoArr: [
+      {
+        title: "AI Sketch Generation Demo",
+        imgArr: [],
+        description: "Real-time demonstration of AI-powered sketch generation using RNN models to convert drawings into artistic sketches.",
+        customComponent: "GifEmbed"
+      }
+    ]
   },
   {
     id: "mips-simulator",

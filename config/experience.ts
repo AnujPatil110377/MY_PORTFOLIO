@@ -38,7 +38,7 @@ export const experiences: ExperienceInterface[] = [
   },
   {
     id: "iit-research",
-    position: "Research Assistant",
+    position: "UG Researcher",
     company: "Distributed Systems and Control Lab, IIT Jodhpur",
     location: "Jodhpur, India",
     startDate: new Date("2023-08-01"),
