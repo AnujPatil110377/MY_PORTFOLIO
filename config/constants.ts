@@ -60,7 +60,40 @@ export type ValidSkills =
   | "FastAPI"
   | "SQL"
   | "NoSQL"
-  | "Framer Motion";
+  | "Framer Motion"
+  | "ROS2"
+  | "PX4"
+  | "C++"
+  | "MATLAB"
+  | "Simulink"
+  | "Machine Learning"
+  | "Computer Vision"
+  | "Reinforcement Learning"
+  | "Swarm Robotics"
+  | "Control Systems"
+  | "UAVs"
+  | "Embedded Systems"
+  | "Arduino"
+  | "ESP32"
+  | "OpenAI Gym"
+  | "Gazebo"
+  | "SLAM"
+  | "Verilog"
+  | "SolidWorks"
+  | "Vivado"
+  | "Linux"
+  | "Bash"
+  | "NumPy"
+  | "Pandas"
+  | "Matplotlib"
+  | "Selenium"
+  | "Playwright"
+  | "Web Scraping"
+  | "Data Analysis"
+  | "Deep Learning"
+  | "Computer Architecture"
+  | "Assembly"
+  | "Systems Programming";
 
 export type ValidCategory =
   | "Full Stack"
@@ -69,9 +102,13 @@ export type ValidCategory =
   | "UI/UX"
   | "Web Dev"
   | "Mobile Dev"
-  | "3D Modeling";
+  | "3D Modeling"
+  | "AI/ML"
+  | "Robotics"
+  | "Computer Vision"
+  | "Systems";
 
-export type ValidExpType = "Personal" | "Professional";
+export type ValidExpType = "Personal" | "Professional" | "Research" | "Academic";
 
 export type ValidPages =
   | "home"
@@ -79,5 +116,4 @@ export type ValidPages =
   | "projects"
   | "experience"
   | "contact"
-  | "contributions"
   | "resume";

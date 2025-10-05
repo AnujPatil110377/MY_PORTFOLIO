@@ -9,152 +9,144 @@ export interface skillsInterface {
 
 export const skillsUnsorted: skillsInterface[] = [
   {
-    name: "Next.js",
+    name: "Python",
     description:
-      "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
+      "Versatile programming language for AI/ML, data analysis, and automation scripts.",
     rating: 5,
-    icon: Icons.nextjs,
+    icon: Icons.python,
   },
   {
-    name: "React",
+    name: "Web Development",
     description:
-      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
+      "Full-stack web development using modern frameworks, APIs, and responsive design principles.",
     rating: 5,
-    icon: Icons.react,
-  },
-  {
-    name: "GraphQL",
-    description:
-      "Fetch data precisely with a powerful query language for APIs and runtime execution.",
-    rating: 4,
-    icon: Icons.graphql,
-  },
-  {
-    name: "Nest.js",
-    description:
-      "Create scalable and modular applications with a progressive Node.js framework.",
-    rating: 4,
-    icon: Icons.nestjs,
-  },
-  {
-    name: "express.js",
-    description:
-      "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
-    rating: 5,
-    icon: Icons.express,
-  },
-  {
-    name: "Node.js",
-    description:
-      "Run JavaScript on the server side, enabling dynamic and responsive applications.",
-    rating: 5,
-    icon: Icons.nodejs,
-  },
-  {
-    name: "MongoDB",
-    description:
-      "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 5,
-    icon: Icons.mongodb,
-  },
-  {
-    name: "Typescript",
-    description:
-      "Enhance JavaScript with static types, making code more understandable and reliable.",
-    rating: 5,
-    icon: Icons.typescript,
-  },
-  {
-    name: "Javascript",
-    description:
-      "Create interactive and dynamic web experiences with the versatile scripting language.",
-    rating: 5,
-    icon: Icons.javascript,
-  },
-  {
-    name: "HTML 5",
-    description:
-      "Structure web content beautifully with the latest version of HyperText Markup Language.",
-    rating: 4,
     icon: Icons.html5,
   },
   {
-    name: "CSS 3",
+    name: "Flutter",
     description:
-      "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
-    rating: 4,
-    icon: Icons.css3,
-  },
-  {
-    name: "React Native",
-    description:
-      "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
-    rating: 4,
-    icon: Icons.react,
-  },
-  {
-    name: "Angular",
-    description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
-    rating: 3,
-    icon: Icons.angular,
-  },
-  {
-    name: "Redux",
-    description:
-      "Manage app state effectively using a predictable and centralized state container.",
-    rating: 4,
-    icon: Icons.redux,
-  },
-  {
-    name: "Socket.io",
-    description:
-      "Enable real-time, bidirectional communication between clients and servers effortlessly.",
-    rating: 3,
-    icon: Icons.socketio,
-  },
-  {
-    name: "Material UI",
-    description:
-      "Create stunning and responsive UIs with a popular React UI framework.",
-    rating: 4,
-    icon: Icons.mui,
-  },
-
-  {
-    name: "Tailwind CSS",
-    description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
+      "Cross-platform mobile development framework for building native iOS and Android apps.",
     rating: 5,
-    icon: Icons.tailwindcss,
+    icon: Icons.flutter,
   },
   {
-    name: "AWS",
+    name: "Embedded Systems",
     description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 3,
-    icon: Icons.amazonaws,
+      "Design and development of microcontroller-based systems for IoT and robotics applications.",
+    rating: 5,
+    icon: Icons.cplusplus,
   },
   {
-    name: "Bootstrap",
+    name: "ROS2",
     description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
-    rating: 2,
-    icon: Icons.bootstrap,
+      "Robot Operating System for developing autonomous robotic applications with real-time communication.",
+    rating: 5,
+    icon: Icons.settings,
   },
   {
-    name: "MySQL",
+    name: "Computer Vision",
     description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 2,
-    icon: Icons.mysql,
+      "Image processing and visual perception systems for robotics and autonomous navigation.",
+    rating: 5,
+    icon: Icons.media,
   },
   {
-    name: "Netlify",
+    name: "C++",
     description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
+      "High-performance programming for embedded systems, robotics, and real-time applications.",
     rating: 4,
-    icon: Icons.netlify,
+    icon: Icons.cplusplus,
+  },
+  {
+    name: "Machine Learning",
+    description:
+      "Advanced algorithms for pattern recognition, prediction, and autonomous decision making.",
+    rating: 4,
+    icon: Icons.cyberpunk,
+  },
+  {
+    name: "PX4",
+    description:
+      "Professional autopilot software for autonomous vehicles, UAVs, and robotic systems.",
+    rating: 4,
+    icon: Icons.settings,
+  },
+  {
+    name: "MATLAB",
+    description:
+      "Technical computing platform for algorithm development, data analysis, and visualization.",
+    rating: 4,
+    icon: Icons.settings,
+  },
+  {
+    name: "Gazebo",
+    description:
+      "3D robotics simulator for testing autonomous systems, UAVs, and robotic algorithms.",
+    rating: 4,
+    icon: Icons.laptop,
+  },
+  {
+    name: "Simulink",
+    description:
+      "Model-based design environment for multidomain simulation and model-based design.",
+    rating: 4,
+    icon: Icons.settings,
+  },
+  {
+    name: "Control Systems",
+    description:
+      "Design and analysis of feedback control systems for autonomous vehicle navigation.",
+    rating: 4,
+    icon: Icons.settings,
+  },
+  {
+    name: "ESP32",
+    description:
+      "Microcontroller programming for IoT applications, sensor integration, and embedded systems.",
+    rating: 4,
+    icon: Icons.cplusplus,
+  },
+  {
+    name: "Linux",
+    description:
+      "System administration and embedded Linux development for robotics and autonomous systems.",
+    rating: 4,
+    icon: Icons.laptop,
+  },
+  {
+    name: "Reinforcement Learning",
+    description:
+      "Training intelligent agents through reward-based learning for autonomous systems.",
+    rating: 3,
+    icon: Icons.settings,
+  },
+  {
+    name: "SLAM",
+    description:
+      "Simultaneous Localization and Mapping algorithms for autonomous navigation systems.",
+    rating: 3,
+    icon: Icons.settings,
+  },
+  {
+    name: "SolidWorks",
+    description:
+      "3D CAD design and mechanical engineering for robotics hardware and prototyping.",
+    rating: 3,
+    icon: Icons.settings,
+  },
+  {
+    name: "Git",
+    description:
+      "Version control and collaborative development for robotics projects and research.",
+    rating: 3,
+    icon: Icons.gitBranch,
+  },
+  {
+    name: "Verilog",
+    description:
+      "Hardware description language for FPGA programming and digital system design.",
+    rating: 3,
+    icon: Icons.settings,
   },
 ];
 

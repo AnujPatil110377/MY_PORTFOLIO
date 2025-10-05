@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 
 import { Icons } from "@/components/common/icons";
 import ProjectDescription from "@/components/projects/project-description";
+import BLEArchitectureDiagram from "@/components/projects/ble-architecture-diagram";
 import { buttonVariants } from "@/components/ui/button";
 import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
@@ -72,14 +73,14 @@ export default function Project({ params }: ProjectPageProps) {
           >
             <Image
               src={profileImg}
-              alt={"naman"}
+              alt={"Anuj Patil"}
               width={42}
               height={42}
-              className="rounded-full bg-background"
+              className="rounded-full bg-background object-cover w-[42px] h-[42px]"
             />
 
             <div className="flex-1 text-left leading-tight">
-              <p className="font-medium">{"Naman Barkiya"}</p>
+              <p className="font-medium">{siteConfig.authorName}</p>
               <p className="text-[12px] text-muted-foreground">
                 @{siteConfig.username}
               </p>
@@ -115,32 +116,41 @@ export default function Project({ params }: ProjectPageProps) {
         />
       </div>
 
-      <div className="mb-7 ">
-        <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-          Page Info
-        </h2>
-        {project.pagesInfoArr.map((page, ind) => (
-          <div key={ind}>
-            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
-              <Icons.star className="h-5 w-5 mr-2" /> {page.title}
-            </h3>
-            <div>
-              <p>{page.description}</p>
-              {page.imgArr.map((img, ind) => (
-                <Image
-                  src={img}
-                  key={ind}
-                  alt={img}
-                  width={720}
-                  height={405}
-                  className="my-4 rounded-md border bg-muted transition-colors"
-                  priority
-                />
-              ))}
+      {project.pagesInfoArr.length > 0 && (
+        <div className="mb-7 ">
+          <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
+            Page Info
+          </h2>
+          {project.pagesInfoArr.map((page, ind) => (
+            <div key={ind}>
+              <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
+                <Icons.star className="h-5 w-5 mr-2" /> {page.title}
+              </h3>
+              <div>
+                <p>{page.description}</p>
+                {/* Render custom component if specified */}
+                {page.customComponent === "BLEArchitectureDiagram" && (
+                  <div className="my-4">
+                    <BLEArchitectureDiagram />
+                  </div>
+                )}
+                {/* Render regular images */}
+                {page.imgArr.map((img, ind) => (
+                  <Image
+                    src={img}
+                    key={ind}
+                    alt={img}
+                    width={720}
+                    height={405}
+                    className="my-4 rounded-md border bg-muted transition-colors"
+                    priority
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
 
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">

@@ -15,27 +15,27 @@ type PagesConfig = {
 export const pagesConfig: PagesConfig = {
   home: {
     title: "Home",
-    description: "Welcome to my portfolio website.",
+    description: "Welcome to my developer portfolio.",
     metadata: {
       title: "Home",
-      description: "Naman Barkiya's portfolio website.",
+      description: "Anuj Patil's software developer portfolio - Building intelligent applications for autonomous robotics systems.",
     },
   },
   skills: {
     title: "Skills",
-    description: "Key skills that define my professional identity.",
+    description: "Full-stack development meets robotics engineering.",
     metadata: {
       title: "Skills",
       description:
-        "Naman Barkiya's key skills that define his professional identity.",
+        "Anuj Patil's software development and robotics skills - from web applications to autonomous systems programming.",
     },
   },
   projects: {
     title: "Projects",
-    description: "Showcasing impactful projects and technical achievements.",
+    description: "Software solutions powering intelligent robotics.",
     metadata: {
       title: "Projects",
-      description: "Naman Barkiya's projects in building web applications.",
+      description: "Anuj Patil's software projects for robotics - BLE tracking apps, UAV navigation systems, and autonomous robot applications.",
     },
   },
   contact: {
@@ -43,24 +43,15 @@ export const pagesConfig: PagesConfig = {
     description: "Let's connect and explore collaborations.",
     metadata: {
       title: "Contact",
-      description: "Contact Naman Barkiya.",
-    },
-  },
-  contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
-    metadata: {
-      title: "Contributions",
-      description:
-        "Naman Barkiya's open-source contributions and community involvement.",
+      description: "Contact Anuj Patil for robotics and AI/ML opportunities.",
     },
   },
   resume: {
     title: "Resume",
-    description: "Naman Barkiya's resume.",
+    description: "Anuj Patil's resume.",
     metadata: {
       title: "Resume",
-      description: "Naman Barkiya's resume.",
+      description: "Anuj Patil's robotics engineering and AI/ML resume.",
     },
   },
   experience: {
@@ -69,7 +60,7 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Experience",
       description:
-        "Naman Barkiya's professional journey and experience timeline.",
+        "Anuj Patil's professional experience in robotics engineering and AI/ML development.",
     },
   },
 };

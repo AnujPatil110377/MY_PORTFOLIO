@@ -7,12 +7,10 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
-import ContributionCard from "@/components/contributions/contribution-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { featuredContributions } from "@/config/contributions";
 import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
@@ -22,8 +20,8 @@ import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
-  description: `${pagesConfig.home.metadata.description} This open-source Next.js portfolio template is customizable to showcase your skills and projects.`,
+  title: `${pagesConfig.home.metadata.title} | ${siteConfig.name}`,
+  description: pagesConfig.home.metadata.description,
   alternates: {
     canonical: siteConfig.url,
   },
@@ -37,21 +35,20 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Software Developer & Robotics Engineer",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
 
-  // Structured data for website as a software application (template)
+  // Structured data for website as a portfolio
   const softwareSchema = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Next.js Portfolio Template",
-    applicationCategory: "DeveloperApplication",
-    operatingSystem: "Web",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
+    "@type": "WebSite",
+    name: "Anuj Patil Portfolio",
+    applicationCategory: "Portfolio",
+    url: siteConfig.url,
+    about: {
+      "@type": "Thing",
+      name: "Robotics Engineering and AI/ML Development",
     },
     author: {
       "@type": "Person",
@@ -74,14 +71,14 @@ export default function IndexPage() {
       />
 
       <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-10">
           <Image
             src={profileImg}
-            height={100}
-            width={100}
-            sizes="100vw"
-            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Full Stack Developer Portfolio"
+            height={200}
+            width={200}
+            sizes="200px"
+            className="bg-primary rounded-full mb-0 md:mb-2 w-48 h-48 object-cover border-8 border-primary"
+            alt="Anuj Patil - Software Developer & Robotics Engineer Portfolio"
             priority
           />
           <AnimatedText
@@ -89,29 +86,29 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            Anuj Patil
           </AnimatedText>
           <AnimatedText
             as="h3"
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Full Stack Developer
+            Software Developer × Robotics Engineer
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Open-source Next.js portfolio template. Fork this on GitHub to
-              create your own developer portfolio.
+              Building intelligent software that powers autonomous robots. From full-stack applications to embedded systems, 
+              I develop cutting-edge solutions for drone navigation, ROS2 ecosystems, and AI-driven robotics at IIT Jodhpur.
             </p>
           </div>
 
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
-                href={"https://github.com/namanbarkiya"}
+                href={siteConfig.links.github}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
+                aria-label="View Anuj Patil's GitHub profile"
               >
                 <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
               </Link>
@@ -126,7 +123,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact Anuj Patil"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
@@ -208,37 +205,6 @@ export default function IndexPage() {
                         See all the relevant experiences.
                     </p>
                 </div> */}
-      </AnimatedSection>
-      <AnimatedSection
-        direction="down"
-        className="container space-y-6 bg-muted py-10 my-14"
-        id="contributions"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.contributions.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.contributions.description}
-          </AnimatedText>
-        </div>
-        <div className="mx-auto justify-center gap-4 md:w-full lg:grid-cols-3">
-          <ContributionCard contributions={featuredContributions} />
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/contributions">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
       </AnimatedSection>
       <AnimatedSection
         direction="left"

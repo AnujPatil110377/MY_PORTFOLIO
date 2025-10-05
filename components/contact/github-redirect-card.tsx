@@ -25,10 +25,10 @@ export default function GithubRedirectCard() {
           />
         </div>
         <h2 className="font-heading text-xl tracking-tight lg:text-3xl duration-300">
-          Like this template?
+          Explore My Code
         </h2>
         <p className="mt-2 mb-10 font-heading text-lg text-muted-foreground">
-          It&#39;s open source. Explore and contribute on GitHub.
+          Software solutions for intelligent robotics - from web apps to embedded systems.
         </p>
         <Github className="w-10 h-10 text-muted-foreground mb-5" />
       </CardContent>

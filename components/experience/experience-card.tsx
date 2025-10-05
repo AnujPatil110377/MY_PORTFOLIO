@@ -33,13 +33,16 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
     <div className="group relative overflow-hidden rounded-lg border bg-background p-4 sm:p-6 transition-all duration-300">
       <div className="flex items-start gap-3 sm:gap-4">
         {experience.logo && (
-          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border-2 border-border overflow-hidden flex-shrink-0">
             <Image
               src={experience.logo}
               alt={experience.company}
               width={48}
               height={48}
-              className="w-full h-full object-contain p-2"
+              className={`w-full h-full object-contain ${
+                experience.id === 'inter-iit' ? 'scale-125' : 
+                experience.id === 'iit-research' ? 'scale-110' : ''
+              }`}
             />
           </div>
         )}
