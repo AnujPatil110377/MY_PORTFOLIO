@@ -19,7 +19,7 @@ export const experiences: ExperienceInterface[] = [
     id: "tata-motors",
     position: "Robotics Software Intern",
     company: "Tata Motors Electric Mobility Division",
-    location: "Mumbai, India",
+    location: "Pune, India",
     startDate: new Date("2025-05-01"),
     endDate: new Date("2025-07-31"),
     description: [
