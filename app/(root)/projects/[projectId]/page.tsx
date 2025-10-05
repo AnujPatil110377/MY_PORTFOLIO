@@ -24,9 +24,10 @@ interface ProjectPageProps {
 const githubUsername = "namanbarkiya";
 
 export default function Project({ params }: ProjectPageProps) {
-  let project = Projects.find((val) => val.id === params.projectId);
+  const project = Projects.find((val) => val.id === params.projectId);
   if (!project) {
     redirect("/projects");
+    return null; // This won't be reached due to redirect, but satisfies TypeScript
   }
 
   return (
