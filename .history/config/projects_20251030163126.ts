@@ -270,7 +270,7 @@ Projects.push({
   techStack: ["Python", "ROS2", "Gazebo", "C++", "SLAM", "Machine Learning"],
   startDate: new Date("2025-01-01"),
   endDate: new Date("2025-06-30"),
-  companyLogoImg: "/projects/robotics-sim/cover.svg",
+  companyLogoImg: "/projects/robotics-sim/cover.png",
   descriptionDetails: {
     paragraphs: [
       "Built a flexible simulation platform for developing and validating robotics algorithms in ROS 2 with Gazebo.",

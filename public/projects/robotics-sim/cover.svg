@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#071033" />
+    </linearGradient>
+    <style>
+      .bg { fill: url(#g); }
+      .title { font-family: Inter, Arial, sans-serif; fill: #e6eef8; font-size:48px; font-weight:700 }
+      .sub { font-family: Inter, Arial, sans-serif; fill: #9fb4d9; font-size:20px }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="600" rx="16"/>
+  <g transform="translate(80,140)">
+    <text class="title">Robotics Sim</text>
+    <text class="sub" y="60">Realtime ROS 2 + Gazebo simulation — multi-robot, SLAM, path planning</text>
+    <g transform="translate(0,140)">
+      <rect x="0" y="0" width="520" height="260" rx="12" fill="#0b1220" opacity="0.6"/>
+      <g transform="translate(32,24)" fill="#6fb0ff" opacity="0.95">
+        <circle cx="30" cy="30" r="22" />
+        <rect x="80" y="6" width="180" height="48" rx="8" />
+        <rect x="80" y="72" width="260" height="28" rx="6" />
+        <rect x="80" y="112" width="260" height="28" rx="6" />
+      </g>
+    </g>
+  </g>
+</svg>
