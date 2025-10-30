@@ -166,7 +166,7 @@ export const Projects: ProjectInterface[] = [
   {
     id: "sketch-generation",
     companyName: "AI-Sketch-Generator",
-    type: "Software",
+    type: "Personal",
     category: ["AI/ML", "Computer Vision"],
     shortDescription: "AI-powered sketch generation system using Generative Adversarial Networks, converting photos to artistic sketches with 92% user satisfaction and multiple artistic styles.",
     githubLink: "https://github.com/AnujPatil110377/quick_draw",
@@ -256,39 +256,3 @@ export const Projects: ProjectInterface[] = [
 ];
 
 export const featuredProjects = Projects.slice(0, 3);
-
-// Added Robotics simulation project
-Projects.push({
-  id: "robotics-sim",
-  companyName: "Robotics Sim",
-  type: "Robotics",
-  category: ["Robotics", "AI/ML"],
-  shortDescription:
-    "A real-time robotics simulation environment for testing control algorithms, multi-robot coordination, and SLAM using ROS 2 and Gazebo.",
-  githubLink: "https://github.com/AnujPatil110377/robotics-sim",
-  websiteLink: "",
-  techStack: ["Python", "ROS2", "Gazebo", "C++", "SLAM", "Machine Learning"],
-  startDate: new Date("2025-01-01"),
-  endDate: new Date("2025-06-30"),
-  companyLogoImg: "/projects/robotics-sim/cover.png",
-  descriptionDetails: {
-    paragraphs: [
-      "Built a flexible simulation platform for developing and validating robotics algorithms in ROS 2 with Gazebo.",
-      "Supports multi-robot scenarios, configurable sensor noise models, and integrated logging/visualization for analysis.",
-    ],
-    bullets: [
-      "Multi-robot coordination and testing",
-      "Configurable physics and sensor noise",
-      "Integration with SLAM and path-planning stacks",
-      "Video recording and telemetry logging"
-    ],
-  },
-  pagesInfoArr: [
-    {
-      title: "Simulation Demo",
-      imgArr: [],
-      description: "Demo video and logs showing multi-robot navigation and SLAM in Gazebo.",
-      customComponent: "VideoEmbed",
-    },
-  ],
-});
