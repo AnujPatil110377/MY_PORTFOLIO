@@ -70,13 +70,13 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="space-y-4 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-1 text-center mt-14">
+      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-2 text-center mt-4">
           <div className="relative mb-2 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
             <Image
               src={profileImg}
               fill
-              sizes="(max-width: 750px) 128px, (max-width: 1200px) 160px, 192px"
+              sizes="(max-width: 768px) 128px, (max-width: 1200px) 160px, 192px"
               className="rounded-full object-cover object-top border-4 sm:border-8 border-primary shadow-xl"
               alt="Anuj Patil - Software Developer & Robotics Engineer Portfolio"
               priority
@@ -85,19 +85,19 @@ export default function IndexPage() {
           <AnimatedText
             as="h1"
             delay={0.2}
-            className="font-heading text-[27px] sm:text-[45px] md:text-[54px] lg:text-[63px] mt-2"
+            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl mt-2"
           >
             Anuj Patil
           </AnimatedText>
           <AnimatedText
             as="h3"
             delay={0.4}
-            className="font-heading text-[12px] sm:text-[18px] md:text-[18px] lg:text-[21.6px] mt-1"
+            className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl mt-1"
           >
             Software Developer × Robotics Engineer
           </AnimatedText>
           <div className="mt-2 max-w-[42rem] text-center">
-            <p className="leading-normal text-muted-foreground text-[12.6px] sm:text-[14.4px]">
+            <p className="leading-normal text-muted-foreground text-sm sm:text-base">
               Building intelligent software that powers autonomous robots. From full-stack applications to embedded systems, 
               I develop cutting-edge solutions for drone navigation, ROS2 ecosystems, and AI-driven robotics at IIT Jodhpur.
             </p>
